@@ -1,4 +1,4 @@
-Nelow is the infoirmation how to use spring mvc with XML configurations
+<---------------------------------------------------------------Below is the infoirmation how to use spring mvc with XML configurations----------------------------------------------------------->
 
 <----------------------------------web.xml------------------------------------------------------------------------------------------->
 
@@ -64,5 +64,6 @@ telusko-servlet.xml
 	<ctx:component-scan base-package=“com.springmv”></ctx:component-scan>
 </beans>
 
+<-------------------------------------------------------------------------------------------------END-------------------------------------------------------------------->
 
 SPRING MVC CAN ALSO BE USED BY ANNOTATION BASED CONFIGURATION WHERE WE DONT NEED WEB.XML AND telusko-servlet.xml
