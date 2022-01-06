@@ -1,3 +1,5 @@
+Nelow is the infoirmation how to use spring mvc with XML configurations
+
 <----------------------------------web.xml------------------------------------------------------------------------------------------->
 
 	<servlet>
@@ -41,7 +43,8 @@ Maven dependency (pom.xml)
 		</dependency>
 
 <-----------------------------------------------------------telusk-servlet.xml---------------------------------------------------------------->
-						            <name of project>-servlet.xml
+						   <name of project>-servlet.xml ( the name telusko is taken from web.xml )
+						   "com.springmv" is name of tye package like controller class
 
 telusko-servlet.xml
 
@@ -58,5 +61,8 @@ telusko-servlet.xml
 	
 	
 	<ctx:annotation-config></ctx:annotation-config>
-	<ctx:component-scan base-package=“”></ctx:component-scan>
+	<ctx:component-scan base-package=“com.springmv”></ctx:component-scan>
 </beans>
+
+
+SPRING MVC CAN ALSO BE USED BY ANNOTATION BASED CONFIGURATION WHERE WE DONT NEED WEB.XML AND telusko-servlet.xml
