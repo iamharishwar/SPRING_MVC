@@ -10,7 +10,7 @@
 		<servlet-name>telusko</servlet-name>
 		<url-pattern>*.htm</url-pattern>
 	</servlet-mapping>
-
+<--------------------------------------------------------------------------------------pom.xml------------------------------------------------>
 Maven dependency (pom.xml)
  <dependency>
 			<groupId>junit</groupId>
@@ -39,6 +39,9 @@ Maven dependency (pom.xml)
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 		</dependency>
+
+<-----------------------------------------------------------telusk-servlet.xml---------------------------------------------------------------->
+						            <name of project>-servlet.xml
 
 telusko-servlet.xml
 
