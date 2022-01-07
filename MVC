@@ -82,7 +82,7 @@ public class HomeController {
         int k = sr.add(i,j);
         ModelAndView mv = new ModelAndView();
         mv.setViewName("display");
-        mv.addObject(k);
+        mv.addObject("k",k);
         return mv;
     }
 }
