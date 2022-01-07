@@ -66,4 +66,24 @@ telusko-servlet.xml
 
 <-------------------------------------------------------------------------------------------------END-------------------------------------------------------------------->
 
-SPRING MVC CAN ALSO BE USED BY ANNOTATION BASED CONFIGURATION WHERE WE DONT NEED WEB.XML AND telusko-servlet.xml
+
+Normal controller class how to create a class using xml configuration.
+
+@Controller
+public class HomeController {
+
+    @RequestMapping("/add")          <------/add is  method in index.jsp ------->
+    public ModelAndView display(HttpServletRequest req, HttpServletResponse res){
+
+        int i = Integer.parseInt(req.getParameter("t1"));
+        int j = Integer.parseInt(req.getParameter("t2"));
+
+        Service sr = new Service();
+        int k = sr.add(i,j);
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("display");
+        mv.addObject(k);
+        return mv;
+    }
+}
+
